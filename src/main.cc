@@ -1,35 +1,73 @@
 #include<iostream>
 #include "SortingMethods.hh"
+#include<time.h>
+#include<iomanip>
+
+const int size = 1000000; 
+int arr[size];
+
+void PopulateArray( int ar[], int n )
+{
+    for( int i = 0 ; i < n ; ++i ) ar[i] = std::rand() % 50 + 1 ;
+}
 
 int main()
 {
-    int arr[] = {5, 8, 1, 9, 4, 7, 3, 2, 6};
-    int size = sizeof(arr)/sizeof(arr[0]); 
-    /*std::cout << "Sorting methods" << std::endl;
+    PopulateArray(arr, size);
+    time_t start, end;
+
+    std::cout << "Sorting methods" << std::endl;
+    
+    /*std::time(&start);
     SortingMethods::ShellSort(arr, size);
-    std::cout << "\nShell Sort:" << std::endl;
-    for(int i = 0; i < size; i++)
+    std::time(&end); 
+    double timeTaken = double(end - start); 
+    std::cout << "Time taken by program is : " << std::fixed 
+         << timeTaken << std::setprecision(5);
+    std::cout << " sec " << std::endl;
+
+    std::cout << "\nShell Sort:" << std::endl;*/
+
+    /*for(int i = 0; i < size; i++)
     {
         std::cout << arr[i] << " ";
     }*/
     /*std::cout << "\nSelection Sort:" << std::endl;
+    std::time(&start);
     SortingMethods::SelectionSort(arr, size);
-    for(int i = 0; i < size; i++)
+    std::time(&end); 
+    double timeTaken = double(end - start); 
+    std::cout << "Time taken by program is : " << std::fixed 
+         << timeTaken << std::setprecision(5);
+    std::cout << " sec " << std::endl;*/
+    /*for(int i = 0; i < size; i++)
     {
         std::cout << arr[i] << " ";
     }*/
     /*std::cout << "\nHeap Sort:" << std::endl;
+    std::time(&start);
     SortingMethods::HeapSort(arr, size);
-    for(int i = 0; i < size; i++)
+    std::time(&end); 
+    double timeTaken = double(end - start); 
+    std::cout << "Time taken by program is : " << std::fixed 
+         << timeTaken << std::setprecision(20);
+    std::cout << " sec " << std::endl;*/
+    /*for(int i = 0; i < size; i++)
     {
         std::cout << arr[i] << " ";
     }*/
-    std::cout << "\nHeap Sort:" << std::endl;
+    std::cout << "\nQuick Sort:" << std::endl;
+    std::time(&start);
     SortingMethods::QuickSort(arr, 0, size - 1);
-    for(int i = 0; i < size; i++)
+    std::time(&end); 
+    double timeTaken = double(end - start); 
+    std::cout << "Time taken by program is : " << std::fixed 
+         << timeTaken << std::setprecision(20);
+    std::cout << " sec " << std::endl;
+   /* for(int i = 0; i < size; i++)
     {
         std::cout << arr[i] << " ";
-    }
+    }*/
     std::getchar();
     return 0;
 }
