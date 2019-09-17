@@ -2,8 +2,8 @@
 
 ## Analisis
 
-|N        |Shell sort| Selection sort|Heapsort| Quicksort|
-|---------|-----------|--------------|---------|---------|
+|N|Shell sort| Selection sort|Heapsort| Quicksort|
+| :--- | :---: | :---: | :---: | :---: |
 |10       |           |              |         |         |
 |100      |           |              |         |         |
 |1000     |           |              |         |         |
