@@ -7,7 +7,7 @@
 
 |N|Shell sort| Selection sort|Heap sort| Quicksort|
 | :--- | :---: | :---: | :---: | :---: |
-|10     | 0 s | 0 s | 0 s |  s|
+|10     | 0 s | 0 s | 0 s |  0 s|
 |100     | 0 s | 0 s | 0 s | 0 s |
 |1000    | 0 s | 0 s | 0 s | 0 s |
 |100000  | 0 s | 0 s | 0 s | 0 s |
