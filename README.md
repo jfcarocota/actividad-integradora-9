@@ -2,11 +2,9 @@
 
 ## Analisis
 
-|N|Shell sort| Selection sort|Heapsort| Quicksort|
+|N|Shell sort| Selection sort|Heap sort| Quicksort|
 | :--- | :---: | :---: | :---: | :---: |
-|10       |           |              |         |         |
-|100      |           |              |         |         |
-|1000     |           |              |         |         |
+|1000     |           |              | 1568709719 ms | 568709631 ms|
 |10000    |           |              |         |         |
 |1000000  |           |              |         |         |
 |10000000 |           |              |         |         |
