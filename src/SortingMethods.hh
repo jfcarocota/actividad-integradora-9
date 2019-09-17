@@ -4,12 +4,14 @@ private:
     /* data */
     static void Swap(int*, int*); 
     static void Heapify(int[], int, int);
+    static int Partition(int[], int, int);
 public:
     SortingMethods(/* args */);
     ~SortingMethods();
     static const void ShellSort(int[], int);
     static void SelectionSort(int[], int); 
     static void HeapSort(int[], int);
+    static void QuickSort(int[], int, int);
 };
 
 SortingMethods::SortingMethods(/* args */)
@@ -96,3 +98,31 @@ void SortingMethods::HeapSort(int arr[], int n)
         SortingMethods::Heapify(arr, i, 0); 
     } 
 } 
+  
+int SortingMethods::Partition(int arr[], int low, int high)  
+{  
+    int pivot = arr[high]; 
+    int i = (low - 1);   
+  
+    for (int j = low; j <= high - 1; j++)  
+    {  
+        if (arr[j] < pivot)  
+        {  
+            i++; 
+            SortingMethods::Swap(&arr[i], &arr[j]);  
+        }  
+    }  
+    SortingMethods::Swap(&arr[i + 1], &arr[high]);  
+    return (i + 1);  
+}  
+  
+void SortingMethods::QuickSort(int arr[], int low, int high)  
+{  
+    if (low < high)  
+    {  
+        int pi = SortingMethods::Partition(arr, low, high);  
+  
+        SortingMethods::QuickSort(arr, low, pi - 1);  
+        SortingMethods::QuickSort(arr, pi + 1, high);  
+    }  
+}  

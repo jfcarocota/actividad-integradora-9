@@ -18,8 +18,14 @@ int main()
     {
         std::cout << arr[i] << " ";
     }*/
-    std::cout << "\nHeap Sort:" << std::endl;
+    /*std::cout << "\nHeap Sort:" << std::endl;
     SortingMethods::HeapSort(arr, size);
+    for(int i = 0; i < size; i++)
+    {
+        std::cout << arr[i] << " ";
+    }*/
+    std::cout << "\nHeap Sort:" << std::endl;
+    SortingMethods::QuickSort(arr, 0, size - 1);
     for(int i = 0; i < size; i++)
     {
         std::cout << arr[i] << " ";
