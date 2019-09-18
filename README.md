@@ -3,6 +3,19 @@
 
 # Actividad Integradora 9 
 
+## Shellsort
+
+<p align="justify">
+El ordenamiento Shell, denomino así por su desarrollador Donald Shell (1959), ordena una estructura de una manera similar a la del Bubble Sort, sin embargo no ordena elementos adyacentes sino que utiliza una segmentación entre los datos. Esta segmentación puede ser en cualquier tamaño de acuerdo a una secuencia de valores que empiezan con un valor grande y van disminuyendo hasta llegar al '1'.
+
+El ShellSort ordena subgrupos de elementos separados K unidades (respecto de su posición en el arreglo) del arreglo o lista original. El valor K es llamado incremento.
+
+Después de que los primeros K subgrupos han sido ordenados (generalmente se utiliza inserción directa), se escoge un nuevo valor de K más pequeño, y el arreglo es de nuevo partido entre el nuevo conjunto de subgrupos. Cada uno de los subgrupos mayores es ordenado y el proceso se repite de nuevo con un valor más pequeño de K, como en la grafica de arriba.
+</p>
+
+![image](https://user-images.githubusercontent.com/6539267/65117231-95a21b80-d99e-11e9-8498-e8389520c19f.png)
+
+
 ## cabeceras necesarias
 ```c++
 #include<iostream>
@@ -30,7 +43,7 @@ std::cout << " sec " << std::endl;
 
 ## Analisis
 
-|N|Shell sort| Selection sort|Heap sort| Quicksort|
+|N|Shellsort| Selectionsort|Heapsort| Quicksort|
 | :--- | :---: | :---: | :---: | :---: |
 |10     | 0 s | 0 s | 0 s |  0 s|
 |100     | 0 s | 0 s | 0 s | 0 s |
