@@ -104,3 +104,10 @@ No puede graficar un valor infinito o indefinido, así que lo reprersenté con u
 
 
 ![image](https://user-images.githubusercontent.com/6539267/65085765-2576a400-d964-11e9-991e-542491a91b0e.png)
+
+## Referencias
+
+C. A. R. Hoare, Quicksort, The Computer Journal, Volume 5, Issue 1, 1962, Pages 10–16, https://doi.org/10.1093/comjnl/5.1.10
+
+haffer, Clifford A .. Estructuras de datos y análisis de algoritmos en C ++, tercera edición (Dover Books on Computer Science). Publicaciones de Dover. Edición de Kindle.
+
