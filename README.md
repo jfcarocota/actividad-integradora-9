@@ -11,7 +11,7 @@ El ordenamiento Shell, denomino así por su desarrollador Donald Shell (1959), o
 El ShellSort ordena subgrupos de elementos separados K unidades (respecto de su posición en el arreglo) del arreglo o lista original. El valor K es llamado incremento.
 
 Después de que los primeros K subgrupos han sido ordenados (generalmente se utiliza inserción directa), se escoge un nuevo valor de K más pequeño, y el arreglo es de nuevo partido entre el nuevo conjunto de subgrupos. Cada uno de los subgrupos mayores es ordenado y el proceso se repite de nuevo con un valor más pequeño de K, como en la grafica de arriba.
-</p>
+<p>
 
 ![image](https://user-images.githubusercontent.com/6539267/65117231-95a21b80-d99e-11e9-8498-e8389520c19f.png)
 
@@ -19,7 +19,7 @@ Después de que los primeros K subgrupos han sido ordenados (generalmente se uti
 
 <p aling="justify">
 El ordenamiento por selección mejora el ordenamiento burbuja haciendo un sólo intercambio por cada pasada a través de la lista. Para hacer esto, un ordenamiento por selección busca el valor mayor a medida que hace una pasada y, después de completar la pasada, lo pone en la ubicación correcta. Al igual que con un ordenamiento burbuja, después de la primera pasada, el ítem mayor está en la ubicación correcta. Después de la segunda pasada, el siguiente mayor está en su ubicación. Este proceso continúa y requiere n−1 pasadas para ordenar los n ítems, ya que el ítem final debe estar en su lugar después de la (n−1)-ésima pasada.
-</p>
+<p>
 
 ![image](https://user-images.githubusercontent.com/6539267/65117993-6c35bf80-d99f-11e9-8f53-e178c7d23752.png)
 
@@ -39,7 +39,22 @@ Este algoritmo consiste en almacenar todos los elementos en un montículo y lueg
  
 ![image](https://user-images.githubusercontent.com/6539267/65119454-1bbf6180-d9a1-11e9-889d-191d6f77164c.png)
 
+## Quicksort
 
+<p aling="justify">
+El ordenamiento rápido (quicksort en inglés) es un algoritmo basado en la técnica de divide y vencerás, que permite, en promedio, ordenar n elementos en un tiempo proporcional a n log n. Esta es la técnica de ordenamiento más rápida conocida. Fue desarrollada por C. Antony R. Hoare en 1960. El algoritmo original es recursivo, pero se utilizan versiones iterativas para mejorar su rendimiento (los algoritmos recursivos son en general más lentos que los iterativos, y consumen más recursos).
+El algoritmo fundamental es el siguiente:
+
+Elegir un elemento de la lista de elementos a ordenar, al que llamaremos pivote.
+Resituar los demás elementos de la lista a cada lado del pivote, de manera que a un lado queden todos los menores que él, y al otro los mayores. En este momento, el pivote ocupa exactamente el lugar que le corresponderá en la lista ordenada.
+La lista queda separada en dos sublistas, una formada por los elementos a la izquierda del pivote, y otra por los elementos a su derecha.
+Repetir este proceso de forma recursiva para cada sublista mientras éstas contengan más de un elemento. Una vez terminado este proceso todos los elementos estarán ordenados. Como se puede suponer, la eficiencia del algoritmo depende de la posición en la que termine el pivote elegido.
+En el mejor caso, el pivote termina en el centro de la lista, dividiéndola en dos sublistas de igual tamaño. En este caso, el orden de complejidad del algoritmo es O(n·log n).
+En el peor caso, el pivote termina en un extremo de la lista. El orden de complejidad del algoritmo es entonces de 0(n²). El peor caso dependerá de la implementación del algoritmo, aunque habitualmente ocurre en listas que se encuentran ordenadas, o casi ordenadas.
+En el caso promedio, el orden es O(n·log n).
+<p>
+
+![image](https://user-images.githubusercontent.com/6539267/65119961-c5065780-d9a1-11e9-8e44-bafef5f1857c.png)
 
 ## cabeceras necesarias
 ```c++
