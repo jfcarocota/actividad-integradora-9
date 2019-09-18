@@ -3,6 +3,28 @@
 
 # Actividad Integradora 9 
 
+## Calculo del tiempo de ejcución
+
+Se tomo la función Time que es parte de la libreria de STL y usa la cabecera de time.h.
+Ejemplo:
+```c++
+#include<iostream>
+#include "SortingMethods.hh"
+#include<time.h>
+#include<iomanip>
+
+time_t start, end;
+ 
+std::cout << "\nQuick Sort:" << std::endl;
+std::time(&start);
+SortingMethods::QuickSort(arr, 0, size - 1);
+std::time(&end); 
+double timeTaken = double(end - start); 
+std::cout << "Time taken by program is : " << std::fixed 
+     << timeTaken << std::setprecision(20);
+std::cout << " sec " << std::endl;
+```
+
 ## Analisis
 
 |N|Shell sort| Selection sort|Heap sort| Quicksort|
