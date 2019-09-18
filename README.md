@@ -13,7 +13,7 @@
 
 ## Calculo del tiempo de ejcución
 
-Se tomo la función Time que es parte de la libreria de STL y usa la cabecera de time.h.
+Se tomó la función Time que es parte de la libreria de STL y usa la cabecera de time.h.
 Ejemplo:
 ```c++
 time_t start, end;
