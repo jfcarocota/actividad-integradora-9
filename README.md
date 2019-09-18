@@ -3,16 +3,19 @@
 
 # Actividad Integradora 9 
 
-## Calculo del tiempo de ejcución
-
-Se tomo la función Time que es parte de la libreria de STL y usa la cabecera de time.h.
-Ejemplo:
+## cabeceras necesarias
 ```c++
 #include<iostream>
 #include "SortingMethods.hh"
 #include<time.h>
 #include<iomanip>
+```
 
+## Calculo del tiempo de ejcución
+
+Se tomo la función Time que es parte de la libreria de STL y usa la cabecera de time.h.
+Ejemplo:
+```c++
 time_t start, end;
  
 std::cout << "\nQuick Sort:" << std::endl;
