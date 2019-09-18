@@ -15,6 +15,12 @@ Después de que los primeros K subgrupos han sido ordenados (generalmente se uti
 
 ![image](https://user-images.githubusercontent.com/6539267/65117231-95a21b80-d99e-11e9-8498-e8389520c19f.png)
 
+<p aling="justify">
+El ordenamiento por selección mejora el ordenamiento burbuja haciendo un sólo intercambio por cada pasada a través de la lista. Para hacer esto, un ordenamiento por selección busca el valor mayor a medida que hace una pasada y, después de completar la pasada, lo pone en la ubicación correcta. Al igual que con un ordenamiento burbuja, después de la primera pasada, el ítem mayor está en la ubicación correcta. Después de la segunda pasada, el siguiente mayor está en su ubicación. Este proceso continúa y requiere n−1 pasadas para ordenar los n ítems, ya que el ítem final debe estar en su lugar después de la (n−1)-ésima pasada.
+</p>
+
+![image](https://user-images.githubusercontent.com/6539267/65117993-6c35bf80-d99f-11e9-8f53-e178c7d23752.png)
+
 
 ## cabeceras necesarias
 ```c++
