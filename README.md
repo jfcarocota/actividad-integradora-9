@@ -15,11 +15,30 @@ Después de que los primeros K subgrupos han sido ordenados (generalmente se uti
 
 ![image](https://user-images.githubusercontent.com/6539267/65117231-95a21b80-d99e-11e9-8498-e8389520c19f.png)
 
+## Selectionsort
+
 <p aling="justify">
 El ordenamiento por selección mejora el ordenamiento burbuja haciendo un sólo intercambio por cada pasada a través de la lista. Para hacer esto, un ordenamiento por selección busca el valor mayor a medida que hace una pasada y, después de completar la pasada, lo pone en la ubicación correcta. Al igual que con un ordenamiento burbuja, después de la primera pasada, el ítem mayor está en la ubicación correcta. Después de la segunda pasada, el siguiente mayor está en su ubicación. Este proceso continúa y requiere n−1 pasadas para ordenar los n ítems, ya que el ítem final debe estar en su lugar después de la (n−1)-ésima pasada.
 </p>
 
 ![image](https://user-images.githubusercontent.com/6539267/65117993-6c35bf80-d99f-11e9-8f53-e178c7d23752.png)
+
+## Heapsort
+<p aling="justify">
+Es un método de ordenamiento basado con comparación, usa el Montículo o Heap como estructura de datos. Este método es más lento que otros métodos, pero es más eficaz en escenarios más rigurosos. Es una estructura de datos del tipo árbol binario. Este árbol binario tiene que ser completo, en otras palabras, cada nivel debe de estar lleno con excepción del ultimo nivel, en el último nivel, los hijos debe recargarse hacia un mismo lado, generalmente hacia el lado izquierdo, así como se muestra en la imagen de la derecha.
+ 
+Este algoritmo consiste en almacenar todos los elementos en un montículo y luego extraer el nodo que queda como raíz en iteraciones sucesivas obteniendo el conjunto ordenado. Para esto el método realiza los siguientes pasos:
+
+1.    Se construye el Heap/montículo a partir del arreglo original.
+2.    La raíz se coloca en el arreglo.
+3.    El último elemento del montículo se vuelve la raíz.
+4.    La nueva raíz se intercambia con el elemento de mayor valor de cada nivel.
+5.    Tras el paso anterior la raíz vuelve a ser el mayor del montículo.
+6.    Se repite el paso 2 hasta que quede el arreglo ordenado.
+<p>
+ 
+![image](https://user-images.githubusercontent.com/6539267/65119454-1bbf6180-d9a1-11e9-889d-191d6f77164c.png)
+
 
 
 ## cabeceras necesarias
